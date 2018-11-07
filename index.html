@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>贪吃蛇小游戏</title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="game.js"></script>
+	<style type="text/css">
+	    .container{
+	    	width: 500px;
+	    	height:100%;
+	    	margin: auto;
+	    
+	    }
+		.game {
+			position: relative;
+			width: 500px;
+			height: 500px;
+			background-color: #ddd;
+			border: solid 1px #000;
+		}
+		.snake{
+			position: absolute;
+			left:10px;
+			top: 10px;
+			width: 20px;
+			height: 20px;
+			box-sizing: border-box;
+			background-color: #000;
+			border:solid 1px #fff; 
+		}
+		.slide{
+			margin-top: 5px;
+			width: 500px;
+			height: 25px;
+			background-color: #bbb;
+			border: solid 1px #000;
+		}
+		.score,.level{
+			width:250px;
+			float: left;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="game">
+		<div class="snake"></div>
+	</div>
+	<div class="slide">
+		<div class="score">Score: 0</div>
+		<div class="level">Level: 0</div>
+	</div>
+</div>
+</body>
+</html>
